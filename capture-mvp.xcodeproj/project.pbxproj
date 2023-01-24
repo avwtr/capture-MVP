@@ -11,6 +11,15 @@
 		90272670297EF063006ACCF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027266F297EF063006ACCF0 /* ContentView.swift */; };
 		90272672297EF065006ACCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90272671297EF065006ACCF0 /* Assets.xcassets */; };
 		90272675297EF065006ACCF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90272674297EF065006ACCF0 /* Preview Assets.xcassets */; };
+		90272680297F2F27006ACCF0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027267F297F2F27006ACCF0 /* ProfileView.swift */; };
+		90272682297F2F52006ACCF0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90272681297F2F52006ACCF0 /* CameraView.swift */; };
+		90272684297F3085006ACCF0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90272683297F3085006ACCF0 /* MainView.swift */; };
+		90272686297F415B006ACCF0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90272685297F415B006ACCF0 /* TabBar.swift */; };
+		90272688297F416F006ACCF0 /* FeedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90272687297F416F006ACCF0 /* FeedPost.swift */; };
+		9027268A297F4430006ACCF0 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90272689297F4430006ACCF0 /* FeedView.swift */; };
+		9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268B297F4CB8006ACCF0 /* LandingView.swift */; };
+		9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268D297F4E5F006ACCF0 /* LoginView.swift */; };
+		90272690297F4E69006ACCF0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268F297F4E69006ACCF0 /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		9027266F297EF063006ACCF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90272671297EF065006ACCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90272674297EF065006ACCF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9027267F297F2F27006ACCF0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		90272681297F2F52006ACCF0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		90272683297F3085006ACCF0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		90272685297F415B006ACCF0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		90272687297F416F006ACCF0 /* FeedPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPost.swift; sourceTree = "<group>"; };
+		90272689297F4430006ACCF0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		9027268B297F4CB8006ACCF0 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		9027268D297F4E5F006ACCF0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9027268F297F4E69006ACCF0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,8 @@
 		9027266C297EF063006ACCF0 /* capture-mvp */ = {
 			isa = PBXGroup;
 			children = (
+				9027267E297F2EF1006ACCF0 /* Views */,
+				9027267B297F2E8B006ACCF0 /* Components */,
 				9027266D297EF063006ACCF0 /* capture_mvpApp.swift */,
 				9027266F297EF063006ACCF0 /* ContentView.swift */,
 				90272671297EF065006ACCF0 /* Assets.xcassets */,
@@ -65,6 +85,45 @@
 				90272674297EF065006ACCF0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9027267B297F2E8B006ACCF0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				90272685297F415B006ACCF0 /* TabBar.swift */,
+				90272687297F416F006ACCF0 /* FeedPost.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9027267C297F2EA3006ACCF0 /* Pre-Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9027268B297F4CB8006ACCF0 /* LandingView.swift */,
+				9027268D297F4E5F006ACCF0 /* LoginView.swift */,
+				9027268F297F4E69006ACCF0 /* CreateView.swift */,
+			);
+			path = "Pre-Auth";
+			sourceTree = "<group>";
+		};
+		9027267D297F2EE8006ACCF0 /* Post-Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9027267F297F2F27006ACCF0 /* ProfileView.swift */,
+				90272681297F2F52006ACCF0 /* CameraView.swift */,
+				90272683297F3085006ACCF0 /* MainView.swift */,
+				90272689297F4430006ACCF0 /* FeedView.swift */,
+			);
+			path = "Post-Auth";
+			sourceTree = "<group>";
+		};
+		9027267E297F2EF1006ACCF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9027267D297F2EE8006ACCF0 /* Post-Auth */,
+				9027267C297F2EA3006ACCF0 /* Pre-Auth */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90272690297F4E69006ACCF0 /* CreateView.swift in Sources */,
+				9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */,
+				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
 				90272670297EF063006ACCF0 /* ContentView.swift in Sources */,
+				90272680297F2F27006ACCF0 /* ProfileView.swift in Sources */,
+				90272688297F416F006ACCF0 /* FeedPost.swift in Sources */,
 				9027266E297EF063006ACCF0 /* capture_mvpApp.swift in Sources */,
+				90272686297F415B006ACCF0 /* TabBar.swift in Sources */,
+				90272684297F3085006ACCF0 /* MainView.swift in Sources */,
+				9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */,
+				90272682297F2F52006ACCF0 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
