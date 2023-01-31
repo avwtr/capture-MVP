@@ -11,7 +11,7 @@ import SwiftUI
 struct capture_mvpApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostView()
         }
     }
 }

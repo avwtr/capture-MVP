@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9027266E297EF063006ACCF0 /* capture_mvpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027266D297EF063006ACCF0 /* capture_mvpApp.swift */; };
-		90272670297EF063006ACCF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027266F297EF063006ACCF0 /* ContentView.swift */; };
 		90272672297EF065006ACCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90272671297EF065006ACCF0 /* Assets.xcassets */; };
 		90272675297EF065006ACCF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90272674297EF065006ACCF0 /* Preview Assets.xcassets */; };
 		90272680297F2F27006ACCF0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027267F297F2F27006ACCF0 /* ProfileView.swift */; };
@@ -20,12 +19,17 @@
 		9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268B297F4CB8006ACCF0 /* LandingView.swift */; };
 		9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268D297F4E5F006ACCF0 /* LoginView.swift */; };
 		90272690297F4E69006ACCF0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268F297F4E69006ACCF0 /* CreateView.swift */; };
+		90F62B8B2988331E009032A1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8A2988331E009032A1 /* CameraService.swift */; };
+		90F62B8D29883949009032A1 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8C29883949009032A1 /* CamView.swift */; };
+		90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B90298846E8009032A1 /* CustomCamView.swift */; };
+		90F62B9329897992009032A1 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B9229897992009032A1 /* CreatePostView.swift */; };
+		90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B94298997BA009032A1 /* ViewRequestView.swift */; };
+		90F62B972989A00C009032A1 /* testview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B962989A00C009032A1 /* testview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9027266A297EF063006ACCF0 /* capture-mvp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capture-mvp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9027266D297EF063006ACCF0 /* capture_mvpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capture_mvpApp.swift; sourceTree = "<group>"; };
-		9027266F297EF063006ACCF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90272671297EF065006ACCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90272674297EF065006ACCF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9027267F297F2F27006ACCF0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -37,6 +41,12 @@
 		9027268B297F4CB8006ACCF0 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		9027268D297F4E5F006ACCF0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9027268F297F4E69006ACCF0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		90F62B8A2988331E009032A1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		90F62B8C29883949009032A1 /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
+		90F62B90298846E8009032A1 /* CustomCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
+		90F62B9229897992009032A1 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		90F62B94298997BA009032A1 /* ViewRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRequestView.swift; sourceTree = "<group>"; };
+		90F62B962989A00C009032A1 /* testview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +79,10 @@
 		9027266C297EF063006ACCF0 /* capture-mvp */ = {
 			isa = PBXGroup;
 			children = (
+				90F62B89298832F9009032A1 /* Functions-Services */,
 				9027267E297F2EF1006ACCF0 /* Views */,
 				9027267B297F2E8B006ACCF0 /* Components */,
 				9027266D297EF063006ACCF0 /* capture_mvpApp.swift */,
-				9027266F297EF063006ACCF0 /* ContentView.swift */,
 				90272671297EF065006ACCF0 /* Assets.xcassets */,
 				90272673297EF065006ACCF0 /* Preview Content */,
 			);
@@ -113,6 +123,11 @@
 				90272681297F2F52006ACCF0 /* CameraView.swift */,
 				90272683297F3085006ACCF0 /* MainView.swift */,
 				90272689297F4430006ACCF0 /* FeedView.swift */,
+				90F62B8C29883949009032A1 /* CamView.swift */,
+				90F62B90298846E8009032A1 /* CustomCamView.swift */,
+				90F62B9229897992009032A1 /* CreatePostView.swift */,
+				90F62B94298997BA009032A1 /* ViewRequestView.swift */,
+				90F62B962989A00C009032A1 /* testview.swift */,
 			);
 			path = "Post-Auth";
 			sourceTree = "<group>";
@@ -124,6 +139,14 @@
 				9027267C297F2EA3006ACCF0 /* Pre-Auth */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		90F62B89298832F9009032A1 /* Functions-Services */ = {
+			isa = PBXGroup;
+			children = (
+				90F62B8A2988331E009032A1 /* CameraService.swift */,
+			);
+			path = "Functions-Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,14 +219,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F62B9329897992009032A1 /* CreatePostView.swift in Sources */,
 				90272690297F4E69006ACCF0 /* CreateView.swift in Sources */,
 				9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */,
+				90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */,
+				90F62B972989A00C009032A1 /* testview.swift in Sources */,
 				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
-				90272670297EF063006ACCF0 /* ContentView.swift in Sources */,
+				90F62B8D29883949009032A1 /* CamView.swift in Sources */,
 				90272680297F2F27006ACCF0 /* ProfileView.swift in Sources */,
 				90272688297F416F006ACCF0 /* FeedPost.swift in Sources */,
 				9027266E297EF063006ACCF0 /* capture_mvpApp.swift in Sources */,
 				90272686297F415B006ACCF0 /* TabBar.swift in Sources */,
+				90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */,
+				90F62B8B2988331E009032A1 /* CameraService.swift in Sources */,
 				90272684297F3085006ACCF0 /* MainView.swift in Sources */,
 				9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */,
 				90272682297F2F52006ACCF0 /* CameraView.swift in Sources */,
@@ -338,6 +366,7 @@
 				DEVELOPMENT_TEAM = LD6MD3U496;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +396,7 @@
 				DEVELOPMENT_TEAM = LD6MD3U496;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct profile: View {
     var body: some View {
+        NavigationView{
             ZStack{
                 Color("Dark")
                 VStack{
@@ -29,17 +30,12 @@ struct profile: View {
                         }
                     }.offset(y: -58)
                     
-                    Button(action: {
-                        // ...
-                    }) {
-                        Text("Create a request").foregroundColor(.white)
-                    }.padding().frame(width: 300, height: 55)
-                        .background(Color("Light"))
-                        .cornerRadius(15)
-                    
+                    NavigationLink(destination: PostView(), label: {Text("Create a Request").bold().frame(width: 280, height: 50)
+                        .background(Color("Light")).foregroundColor(.white).cornerRadius(10)})
                     
                 }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
                     .background(Color("Dark"))
+            }
         }
     }
 }
