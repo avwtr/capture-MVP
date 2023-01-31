@@ -9,15 +9,7 @@ import SwiftUI
 
 struct ViewRequestView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "person.circle").resizable().frame(width: 50, height: 50)
-            Spacer().frame(height: 50)
-            Text("Paul Hudson")
-        }
-        .contentShape(Rectangle())
-        .onTapGesture {
-            print("Show details for user")
-        }
+        Text("yi=")
     }
 }
 

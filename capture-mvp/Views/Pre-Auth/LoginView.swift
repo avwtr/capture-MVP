@@ -9,7 +9,17 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            VStack(alignment: .leading){
+                HStack{ Spacer()}
+                Text("Welcome Back.").font(.largeTitle).fontWeight(.semibold)
+                
+            }.frame(height: 260)
+                .padding(.leading)
+                .background(Color("Dark")).foregroundColor(.white)
+            Spacer()
+        }.ignoresSafeArea()
     }
 }
 
