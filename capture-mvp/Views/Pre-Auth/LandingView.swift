@@ -23,12 +23,18 @@ struct LandingView: View {
             }.padding().frame(width: 300, height: 50)
                 .background(Color("Light"))
                 .cornerRadius(15).offset(y:210)
-            Button(action: {
-                //
-            }){
-                Text("Already have an account?").foregroundColor(Color("Light"))
-                Text("Login here").foregroundColor(.white)
-            }.offset(y:300)
+            NavigationLink{
+                CreateView().navigationBarHidden(true)
+            }label: {
+                HStack{
+                    Text("Don't have an account?").font(.caption).fontWeight(.semibold)
+                    
+                    Text("Sign up").font(.footnote).fontWeight(.semibold)
+                }
+            }.foregroundColor(Color("Light"))
+                
+            
+            
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity).background(Color("Dark"))
     }

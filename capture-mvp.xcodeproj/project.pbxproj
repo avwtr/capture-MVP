@@ -19,6 +19,15 @@
 		9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268B297F4CB8006ACCF0 /* LandingView.swift */; };
 		9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268D297F4E5F006ACCF0 /* LoginView.swift */; };
 		90272690297F4E69006ACCF0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027268F297F4E69006ACCF0 /* CreateView.swift */; };
+		902E8AE72989C7B40007240B /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AE62989C7B40007240B /* RoundedShape.swift */; };
+		902E8AE92989D38A0007240B /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AE82989D38A0007240B /* CustomInputField.swift */; };
+		902E8AEB298AB3370007240B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 902E8AEA298AB3370007240B /* GoogleService-Info.plist */; };
+		902E8AEE298AB4070007240B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AED298AB4070007240B /* FirebaseAuth */; };
+		902E8AF0298AB4070007240B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AEF298AB4070007240B /* FirebaseFirestore */; };
+		902E8AF2298AB4070007240B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AF1298AB4070007240B /* FirebaseFirestoreSwift */; };
+		902E8AF4298AB4070007240B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AF3298AB4070007240B /* FirebaseStorage */; };
+		902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AF6298AB5A10007240B /* AuthViewModel.swift */; };
+		902E8AF9298ADCED0007240B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AF8298ADCED0007240B /* ContentView.swift */; };
 		90F62B8B2988331E009032A1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8A2988331E009032A1 /* CameraService.swift */; };
 		90F62B8D29883949009032A1 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8C29883949009032A1 /* CamView.swift */; };
 		90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B90298846E8009032A1 /* CustomCamView.swift */; };
@@ -41,6 +50,11 @@
 		9027268B297F4CB8006ACCF0 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		9027268D297F4E5F006ACCF0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9027268F297F4E69006ACCF0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		902E8AE62989C7B40007240B /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		902E8AE82989D38A0007240B /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		902E8AEA298AB3370007240B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		902E8AF6298AB5A10007240B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		902E8AF8298ADCED0007240B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90F62B8A2988331E009032A1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		90F62B8C29883949009032A1 /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
 		90F62B90298846E8009032A1 /* CustomCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
@@ -54,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902E8AEE298AB4070007240B /* FirebaseAuth in Frameworks */,
+				902E8AF4298AB4070007240B /* FirebaseStorage in Frameworks */,
+				902E8AF0298AB4070007240B /* FirebaseFirestore in Frameworks */,
+				902E8AF2298AB4070007240B /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +97,15 @@
 		9027266C297EF063006ACCF0 /* capture-mvp */ = {
 			isa = PBXGroup;
 			children = (
+				902E8AF5298AB58B0007240B /* ViewModels */,
 				90F62B89298832F9009032A1 /* Functions-Services */,
 				9027267E297F2EF1006ACCF0 /* Views */,
 				9027267B297F2E8B006ACCF0 /* Components */,
 				9027266D297EF063006ACCF0 /* capture_mvpApp.swift */,
 				90272671297EF065006ACCF0 /* Assets.xcassets */,
+				902E8AEA298AB3370007240B /* GoogleService-Info.plist */,
 				90272673297EF065006ACCF0 /* Preview Content */,
+				902E8AF8298ADCED0007240B /* ContentView.swift */,
 			);
 			path = "capture-mvp";
 			sourceTree = "<group>";
@@ -102,6 +123,8 @@
 			children = (
 				90272685297F415B006ACCF0 /* TabBar.swift */,
 				90272687297F416F006ACCF0 /* FeedPost.swift */,
+				902E8AE62989C7B40007240B /* RoundedShape.swift */,
+				902E8AE82989D38A0007240B /* CustomInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -141,6 +164,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		902E8AF5298AB58B0007240B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				902E8AF6298AB5A10007240B /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		90F62B89298832F9009032A1 /* Functions-Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +196,12 @@
 			dependencies = (
 			);
 			name = "capture-mvp";
+			packageProductDependencies = (
+				902E8AED298AB4070007240B /* FirebaseAuth */,
+				902E8AEF298AB4070007240B /* FirebaseFirestore */,
+				902E8AF1298AB4070007240B /* FirebaseFirestoreSwift */,
+				902E8AF3298AB4070007240B /* FirebaseStorage */,
+			);
 			productName = "capture-mvp";
 			productReference = 9027266A297EF063006ACCF0 /* capture-mvp.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 90272661297EF063006ACCF0;
+			packageReferences = (
+				902E8AEC298AB4070007240B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9027266B297EF063006ACCF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90272675297EF065006ACCF0 /* Preview Assets.xcassets in Resources */,
+				902E8AEB298AB3370007240B /* GoogleService-Info.plist in Resources */,
 				90272672297EF065006ACCF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +266,10 @@
 				90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */,
 				90F62B972989A00C009032A1 /* testview.swift in Sources */,
 				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
+				902E8AF9298ADCED0007240B /* ContentView.swift in Sources */,
+				902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */,
 				90F62B8D29883949009032A1 /* CamView.swift in Sources */,
+				902E8AE72989C7B40007240B /* RoundedShape.swift in Sources */,
 				90272680297F2F27006ACCF0 /* ProfileView.swift in Sources */,
 				90272688297F416F006ACCF0 /* FeedPost.swift in Sources */,
 				9027266E297EF063006ACCF0 /* capture_mvpApp.swift in Sources */,
@@ -234,6 +278,7 @@
 				90F62B8B2988331E009032A1 /* CameraService.swift in Sources */,
 				90272684297F3085006ACCF0 /* MainView.swift in Sources */,
 				9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */,
+				902E8AE92989D38A0007240B /* CustomInputField.swift in Sources */,
 				90272682297F2F52006ACCF0 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +482,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		902E8AEC298AB4070007240B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		902E8AED298AB4070007240B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902E8AEC298AB4070007240B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		902E8AEF298AB4070007240B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902E8AEC298AB4070007240B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		902E8AF1298AB4070007240B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902E8AEC298AB4070007240B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		902E8AF3298AB4070007240B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902E8AEC298AB4070007240B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90272662297EF063006ACCF0 /* Project object */;
 }

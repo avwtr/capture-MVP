@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    @State private var password = ""
     var body: some View {
         VStack{
             
@@ -18,7 +20,30 @@ struct LoginView: View {
             }.frame(height: 260)
                 .padding(.leading)
                 .background(Color("Dark")).foregroundColor(.white)
+                .clipShape(RoundedShape(corners: [.bottomRight]))
+            VStack(spacing: 40){
+                CustomInputField(imageName: "envelope", placeholderText: "Email",
+                                 text: $email)
+                CustomInputField(imageName: "lock", placeholderText: "Password",
+                                  text: $password)
+            }.padding(.horizontal, 32)
+                .padding(.top, 44)
+            Button{
+                print("Sign in here...")
+            }label: {
+                Text("Sign in").font(.headline).foregroundColor(.white).frame(width: 340, height: 50).background(Color("Light")).clipShape(Capsule()).padding()
+            }.shadow(color: .gray.opacity(0.5), radius: 10, x:0, y: 0).offset(y:40)
             Spacer()
+            
+            NavigationLink{
+                CreateView().navigationBarHidden(true)
+            }label: {
+                HStack{
+                    Text("Don't have an account?").font(.caption).fontWeight(.semibold)
+                    
+                    Text("Sign up").font(.footnote).fontWeight(.semibold)
+                }
+            }.padding(.bottom, 32).foregroundColor(Color("Light"))
         }.ignoresSafeArea()
     }
 }
