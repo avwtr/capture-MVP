@@ -11,6 +11,8 @@ import Firebase
 @main
 struct capture_mvpApp: App {
     
+    @StateObject var viewModel = AuthViewModel()
+    
     init(){
         FirebaseApp.configure()
     }
@@ -18,7 +20,7 @@ struct capture_mvpApp: App {
     
     var body: some Scene {
         WindowGroup {
-            PostView()
+            MainView().environmentObject(viewModel)
         }
     }
 }

@@ -27,7 +27,6 @@
 		902E8AF2298AB4070007240B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AF1298AB4070007240B /* FirebaseFirestoreSwift */; };
 		902E8AF4298AB4070007240B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AF3298AB4070007240B /* FirebaseStorage */; };
 		902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AF6298AB5A10007240B /* AuthViewModel.swift */; };
-		902E8AF9298ADCED0007240B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AF8298ADCED0007240B /* ContentView.swift */; };
 		90F62B8B2988331E009032A1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8A2988331E009032A1 /* CameraService.swift */; };
 		90F62B8D29883949009032A1 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8C29883949009032A1 /* CamView.swift */; };
 		90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B90298846E8009032A1 /* CustomCamView.swift */; };
@@ -54,7 +53,6 @@
 		902E8AE82989D38A0007240B /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		902E8AEA298AB3370007240B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		902E8AF6298AB5A10007240B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		902E8AF8298ADCED0007240B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90F62B8A2988331E009032A1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		90F62B8C29883949009032A1 /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
 		90F62B90298846E8009032A1 /* CustomCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
@@ -102,10 +100,10 @@
 				9027267E297F2EF1006ACCF0 /* Views */,
 				9027267B297F2E8B006ACCF0 /* Components */,
 				9027266D297EF063006ACCF0 /* capture_mvpApp.swift */,
+				90272683297F3085006ACCF0 /* MainView.swift */,
 				90272671297EF065006ACCF0 /* Assets.xcassets */,
 				902E8AEA298AB3370007240B /* GoogleService-Info.plist */,
 				90272673297EF065006ACCF0 /* Preview Content */,
-				902E8AF8298ADCED0007240B /* ContentView.swift */,
 			);
 			path = "capture-mvp";
 			sourceTree = "<group>";
@@ -144,7 +142,6 @@
 			children = (
 				9027267F297F2F27006ACCF0 /* ProfileView.swift */,
 				90272681297F2F52006ACCF0 /* CameraView.swift */,
-				90272683297F3085006ACCF0 /* MainView.swift */,
 				90272689297F4430006ACCF0 /* FeedView.swift */,
 				90F62B8C29883949009032A1 /* CamView.swift */,
 				90F62B90298846E8009032A1 /* CustomCamView.swift */,
@@ -266,7 +263,6 @@
 				90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */,
 				90F62B972989A00C009032A1 /* testview.swift in Sources */,
 				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
-				902E8AF9298ADCED0007240B /* ContentView.swift in Sources */,
 				902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */,
 				90F62B8D29883949009032A1 /* CamView.swift in Sources */,
 				902E8AE72989C7B40007240B /* RoundedShape.swift in Sources */,

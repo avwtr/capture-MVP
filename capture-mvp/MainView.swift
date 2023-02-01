@@ -33,13 +33,32 @@ struct FeedView: View {
 
 struct MainView: View {
     @State private var selectedTab: Tab = .house
-    
+    @EnvironmentObject var viewModel: AuthViewModel
     init(){
         UITabBar.appearance().isHidden = true
     }
     
     var body: some View {
         
+        if viewModel.userSession == nil {
+            LoginView()
+        }else{
+            mainInterface
+        }
+        
+        }
+    }
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
+}
+
+
+extension MainView{
+    
+    var mainInterface: some View {
         ZStack{
             VStack{
                 TabView(selection: $selectedTab){
@@ -59,12 +78,7 @@ struct MainView: View {
                 tabBar(selectedTab: $selectedTab)
             }.offset(y:50)
         }
+        
     }
+    
 }
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}
-
