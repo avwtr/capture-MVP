@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct testview: View {
+struct testview2: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct testview_Previews: PreviewProvider {
+struct testview2_Previews: PreviewProvider {
     static var previews: some View {
-        testview()
+        testview2()
     }
 }

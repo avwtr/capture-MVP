@@ -17,7 +17,7 @@ class AuthViewModel: ObservableObject{
         self.userSession = Auth.auth().currentUser
         
         
-        print("DEBUG: User session is \(self.userSession)")
+        
     }
 }
 

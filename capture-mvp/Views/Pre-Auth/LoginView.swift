@@ -13,19 +13,43 @@ struct LoginView: View {
     var body: some View {
         VStack{
             
-            VStack(alignment: .leading){
-                HStack{ Spacer()}
-                Text("Welcome Back.").font(.largeTitle).fontWeight(.semibold)
-                
-            }.frame(height: 260)
-                .padding(.leading)
-                .background(Color("Dark")).foregroundColor(.white)
-                .clipShape(RoundedShape(corners: [.bottomRight]))
+            AuthHeaderView(title1: "Welcome Back")
+            
             VStack(spacing: 40){
-                CustomInputField(imageName: "envelope", placeholderText: "Email",
-                                 text: $email)
-                CustomInputField(imageName: "lock", placeholderText: "Password",
-                                  text: $password)
+                
+                VStack{
+                    HStack{
+                        Image(systemName: "envelope").resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(Color("Dark"))
+                        
+                        TextField("Email", text: $email)
+                        
+                    
+                    }
+                    Divider()
+                        .background(Color(.darkGray))
+                }
+                VStack{
+                    HStack{
+                        Image(systemName: "lock").resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(Color("Dark"))
+                        
+                        TextField("Password", text: $password)
+                        
+                    
+                    }
+                    Divider()
+                        .background(Color(.darkGray))
+                }
+                
+                
+                
+                
+                
             }.padding(.horizontal, 32)
                 .padding(.top, 44)
             Button{

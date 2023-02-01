@@ -27,12 +27,12 @@
 		902E8AF2298AB4070007240B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AF1298AB4070007240B /* FirebaseFirestoreSwift */; };
 		902E8AF4298AB4070007240B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 902E8AF3298AB4070007240B /* FirebaseStorage */; };
 		902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E8AF6298AB5A10007240B /* AuthViewModel.swift */; };
+		90B9E61E298AF8E300742CA5 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9E61D298AF8E300742CA5 /* AuthHeaderView.swift */; };
 		90F62B8B2988331E009032A1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8A2988331E009032A1 /* CameraService.swift */; };
 		90F62B8D29883949009032A1 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8C29883949009032A1 /* CamView.swift */; };
 		90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B90298846E8009032A1 /* CustomCamView.swift */; };
 		90F62B9329897992009032A1 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B9229897992009032A1 /* CreatePostView.swift */; };
 		90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B94298997BA009032A1 /* ViewRequestView.swift */; };
-		90F62B972989A00C009032A1 /* testview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B962989A00C009032A1 /* testview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,12 +53,12 @@
 		902E8AE82989D38A0007240B /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		902E8AEA298AB3370007240B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		902E8AF6298AB5A10007240B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		90B9E61D298AF8E300742CA5 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		90F62B8A2988331E009032A1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		90F62B8C29883949009032A1 /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
 		90F62B90298846E8009032A1 /* CustomCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
 		90F62B9229897992009032A1 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		90F62B94298997BA009032A1 /* ViewRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRequestView.swift; sourceTree = "<group>"; };
-		90F62B962989A00C009032A1 /* testview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +123,7 @@
 				90272687297F416F006ACCF0 /* FeedPost.swift */,
 				902E8AE62989C7B40007240B /* RoundedShape.swift */,
 				902E8AE82989D38A0007240B /* CustomInputField.swift */,
+				90B9E61D298AF8E300742CA5 /* AuthHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 				90F62B90298846E8009032A1 /* CustomCamView.swift */,
 				90F62B9229897992009032A1 /* CreatePostView.swift */,
 				90F62B94298997BA009032A1 /* ViewRequestView.swift */,
-				90F62B962989A00C009032A1 /* testview.swift */,
 			);
 			path = "Post-Auth";
 			sourceTree = "<group>";
@@ -261,7 +261,6 @@
 				90272690297F4E69006ACCF0 /* CreateView.swift in Sources */,
 				9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */,
 				90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */,
-				90F62B972989A00C009032A1 /* testview.swift in Sources */,
 				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
 				902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */,
 				90F62B8D29883949009032A1 /* CamView.swift in Sources */,
@@ -269,6 +268,7 @@
 				90272680297F2F27006ACCF0 /* ProfileView.swift in Sources */,
 				90272688297F416F006ACCF0 /* FeedPost.swift in Sources */,
 				9027266E297EF063006ACCF0 /* capture_mvpApp.swift in Sources */,
+				90B9E61E298AF8E300742CA5 /* AuthHeaderView.swift in Sources */,
 				90272686297F415B006ACCF0 /* TabBar.swift in Sources */,
 				90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */,
 				90F62B8B2988331E009032A1 /* CameraService.swift in Sources */,

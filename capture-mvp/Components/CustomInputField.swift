@@ -12,6 +12,7 @@ struct CustomInputField: View {
     let imageName: String
     let placeholderText: String
     @Binding var text: String
+    
     var body: some View {
         VStack{
             HStack{
@@ -23,7 +24,7 @@ struct CustomInputField: View {
                 TextField(placeholderText, text: $text)
             }
             Divider()
-                .background(Color("Dark"))
+                .background(Color(.darkGray))
         }
     }
 }

@@ -21,6 +21,7 @@ struct capture_mvpApp: App {
     var body: some Scene {
         WindowGroup {
             MainView().environmentObject(viewModel)
+            
         }
     }
 }

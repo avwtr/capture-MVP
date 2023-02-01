@@ -16,15 +16,7 @@ struct CreateView: View {
     var body: some View {
         VStack{
             VStack{
-                VStack(alignment: .leading){
-                    HStack{ Spacer()}
-                    Image("portal").resizable().frame(width: 200.0, height:65.0).offset(x: 50)
-        
-                    
-                }.frame(height: 260)
-                    .padding(.leading)
-                    .background(Color("Dark")).foregroundColor(.white)
-                    .clipShape(RoundedShape(corners: [.bottomRight]))
+                AuthHeaderView(title1: "Get Started")
                 
                 VStack(spacing: 40){
                     CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
