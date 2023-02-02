@@ -1,14 +1,14 @@
 //
-//  MainView.swift
+//  ContentView.swift
 //  capture-mvp
 //
-//  Created by Alex Vawter on 1/23/23.
+//  Created by Alex Vawter on 2/1/23.
 //
 
 import SwiftUI
 
 
-struct MainView: View {
+struct ContentView: View {
     @State private var selectedTab: Tab = .house
     @EnvironmentObject var viewModel: AuthViewModel
     init(){
@@ -20,25 +20,25 @@ struct MainView: View {
             if viewModel.userSession == nil {
                 LoginView()
             }else{
-                mainInterface
+                mainInt
             }
             
         }
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            MainView()
+            ContentView()
         }
     }
 }
 
 
-extension MainView{
+extension ContentView{
     
-    var mainInterface: some View {
+    var mainInt: some View {
         ZStack{
             VStack{
                 TabView(selection: $selectedTab){
