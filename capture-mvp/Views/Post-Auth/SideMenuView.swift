@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SideMenuView: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     var body: some View {
         VStack(alignment: .leading){
             VStack(alignment: .leading){
@@ -22,38 +22,30 @@ struct SideMenuView: View {
                 }
                 
             }.padding(.leading)
-            ForEach(SideMenuViewModel.allCases, id: \.rawValue){option in
-                HStack{
-                    Image(systemName: option.imageName).font(.headline)
-                    Text(option.title).font(.subheadline)
-                    Spacer()
-                }.frame(height: 40)
-                    .padding(.horizontal)
+            ForEach(SideMenuViewModel.allCases, id: \.rawValue){ viewModel in
                 if viewModel == .signout {
                     Button{
-                        print("handle logout here")
+                        authViewModel.logOut()
                     }label: {
-                        SideMenuOptionRowView(viewModel: viewModel)
+                        SideMenuRowView(viewModel: viewModel)
                     }
-                    else if viewModel == .settings{
-                        NavigationLink{
-                            SettingsView()
-                        }label: {
-                            SideMenuOptionRowView(viewModel: viewModel)
-                        }
-                    }
-                    else{
-                        SideMenuOptionRowView(viewModel: viewModel)
+                
+                }
+                else if viewModel == .settings {
+                    NavigationLink{
+                        SettingsView()
+                    }label: {
+                        SideMenuRowView(viewModel: viewModel)
                     }
                 }
-            }.padding(.vertical, 15)
-            Spacer()
+                Spacer()
+            }
         }
     }
-}
-
-struct SideMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        SideMenuView()
+    
+    struct SideMenuView_Previews: PreviewProvider {
+        static var previews: some View {
+            SideMenuView()
+        }
     }
 }

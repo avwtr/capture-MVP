@@ -17,6 +17,8 @@ struct CreateView: View {
     var body: some View {
         VStack{
             VStack{
+                
+                
                 AuthHeaderView(title1: "Get Started")
                 
                 VStack(spacing: 40){
