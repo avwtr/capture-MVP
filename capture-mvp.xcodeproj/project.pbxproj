@@ -31,7 +31,6 @@
 		90B9E622298B2CDF00742CA5 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9E621298B2CDF00742CA5 /* SideMenuView.swift */; };
 		90B9E624298B2CF100742CA5 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9E623298B2CF100742CA5 /* SideMenuRowView.swift */; };
 		90B9E626298B2D0100742CA5 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9E625298B2D0100742CA5 /* SideMenuViewModel.swift */; };
-		90B9E628298B2F0400742CA5 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B9E627298B2F0400742CA5 /* UserStatsView.swift */; };
 		90F62B8B2988331E009032A1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8A2988331E009032A1 /* CameraService.swift */; };
 		90F62B8D29883949009032A1 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8C29883949009032A1 /* CamView.swift */; };
 		90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B90298846E8009032A1 /* CustomCamView.swift */; };
@@ -61,7 +60,6 @@
 		90B9E621298B2CDF00742CA5 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		90B9E623298B2CF100742CA5 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		90B9E625298B2D0100742CA5 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
-		90B9E627298B2F0400742CA5 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		90F62B8A2988331E009032A1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		90F62B8C29883949009032A1 /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
 		90F62B90298846E8009032A1 /* CustomCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				902E8AE62989C7B40007240B /* RoundedShape.swift */,
 				902E8AE82989D38A0007240B /* CustomInputField.swift */,
 				90B9E61D298AF8E300742CA5 /* AuthHeaderView.swift */,
-				90B9E627298B2F0400742CA5 /* UserStatsView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,7 +284,6 @@
 				90272686297F415B006ACCF0 /* TabBar.swift in Sources */,
 				90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */,
 				90F62B8B2988331E009032A1 /* CameraService.swift in Sources */,
-				90B9E628298B2F0400742CA5 /* UserStatsView.swift in Sources */,
 				90B9E624298B2CF100742CA5 /* SideMenuRowView.swift in Sources */,
 				9027268E297F4E5F006ACCF0 /* LoginView.swift in Sources */,
 				902E8AE92989D38A0007240B /* CustomInputField.swift in Sources */,

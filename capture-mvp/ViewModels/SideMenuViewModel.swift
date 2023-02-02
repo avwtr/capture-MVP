@@ -12,7 +12,7 @@ enum SideMenuViewModel: Int, CaseIterable{
     case settings
     case signout
     
-    var description: String {
+    var title: String {
         switch self{
         case .settings: return "Settings"
         case .signout: return "Signout"

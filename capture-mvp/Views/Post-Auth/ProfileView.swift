@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct profile: View {
+    @State private var showMenu = false
     var body: some View {
         NavigationView{
             ZStack{
                 Color("Dark")
                 VStack{
                     VStack{
+                        Button{
+                            showMenu.toggle()
+                        }label: {
+                            Image(systemName: "gear").foregroundColor(.white).font(.system(size: 28))}
                         Image("circle").frame(height: 8).padding(60)
                         Text("Alex Vawter").font(.system(size: 30, weight:.bold, design: .default)).foregroundColor(.white)
                         Text("@avawt12").font(.system(size: 13, weight: .light, design: .default)).foregroundColor(.white)}.offset(y:-130).padding(10)
@@ -35,7 +40,10 @@ struct profile: View {
                     
                 }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
                     .background(Color("Dark"))
+                SideMenuView().frame(width: 300).offset(x: showMenu ? 0: -300, y: 0).background(showMenu ? Color.white: Color.clear)
+                    
             }
+            
         }
     }
 }
