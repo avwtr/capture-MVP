@@ -39,6 +39,8 @@
 		90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B94298997BA009032A1 /* ViewRequestView.swift */; };
 		90F6E1AE298C46B3001D9B3E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1AD298C46B3001D9B3E /* SettingsView.swift */; };
 		90F6E1B0298C4E49001D9B3E /* ProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1AF298C4E49001D9B3E /* ProfilePicView.swift */; };
+		90F6E1B2298D8670001D9B3E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1B1298D8670001D9B3E /* UserService.swift */; };
+		90F6E1B5298D8A38001D9B3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1B4298D8A38001D9B3E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		90F62B94298997BA009032A1 /* ViewRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRequestView.swift; sourceTree = "<group>"; };
 		90F6E1AD298C46B3001D9B3E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		90F6E1AF298C4E49001D9B3E /* ProfilePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicView.swift; sourceTree = "<group>"; };
+		90F6E1B1298D8670001D9B3E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		90F6E1B4298D8A38001D9B3E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		9027266C297EF063006ACCF0 /* capture-mvp */ = {
 			isa = PBXGroup;
 			children = (
+				90F6E1B3298D8A2E001D9B3E /* Model */,
 				902E8AF5298AB58B0007240B /* ViewModels */,
 				90F62B89298832F9009032A1 /* Functions-Services */,
 				9027267E297F2EF1006ACCF0 /* Views */,
@@ -191,8 +196,17 @@
 			isa = PBXGroup;
 			children = (
 				90F62B8A2988331E009032A1 /* CameraService.swift */,
+				90F6E1B1298D8670001D9B3E /* UserService.swift */,
 			);
 			path = "Functions-Services";
+			sourceTree = "<group>";
+		};
+		90F6E1B3298D8A2E001D9B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90F6E1B4298D8A38001D9B3E /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +294,9 @@
 				90B9E622298B2CDF00742CA5 /* SideMenuView.swift in Sources */,
 				9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */,
 				90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */,
+				90F6E1B5298D8A38001D9B3E /* User.swift in Sources */,
 				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
+				90F6E1B2298D8670001D9B3E /* UserService.swift in Sources */,
 				902E8AF7298AB5A10007240B /* AuthViewModel.swift in Sources */,
 				90B9E620298B1A9000742CA5 /* ContentView.swift in Sources */,
 				90F62B8D29883949009032A1 /* CamView.swift in Sources */,

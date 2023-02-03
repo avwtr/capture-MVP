@@ -10,35 +10,37 @@ import SwiftUI
 struct SideMenuView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     var body: some View {
-        VStack(alignment: .leading){
+        if let user = authViewModel.currentUser {
             VStack(alignment: .leading){
-                Circle()
-                    .frame(width: 48, height: 48)
-                VStack(alignment: .leading, spacing: 4){
-                    Text("Alex Vawter").font(.headline)
+                VStack(alignment: .leading){
+                    Circle()
+                        .frame(width: 48, height: 48)
+                    VStack(alignment: .leading, spacing: 4){
+                        Text(user.fullname).font(.headline)
+                        
+                        Text("@\(user.username)").font(.caption)
+                            .foregroundColor(.gray)
+                    }
                     
-                    Text("@avawter").font(.caption)
-                        .foregroundColor(.gray)
-                }
-                
-            }.padding(.leading)
-            ForEach(SideMenuViewModel.allCases, id: \.rawValue){ viewModel in
-                if viewModel == .signout {
-                    Button{
-                        authViewModel.logOut()
-                    }label: {
-                        SideMenuRowView(viewModel: viewModel)
+                }.padding(.leading)
+                ForEach(SideMenuViewModel.allCases, id: \.rawValue){ viewModel in
+                    if viewModel == .signout {
+                        Button{
+                            authViewModel.logOut()
+                        }label: {
+                            SideMenuRowView(viewModel: viewModel)
+                        }
+                        
                     }
-                
-                }
-                else if viewModel == .settings {
-                    NavigationLink{
-                        SettingsView()
-                    }label: {
-                        SideMenuRowView(viewModel: viewModel)
+                    else if viewModel == .settings {
+                        NavigationLink{
+                            SettingsView()
+                        }label: {
+                            SideMenuRowView(viewModel: viewModel)
+                        }
                     }
+                    Spacer()
                 }
-                Spacer()
             }
         }
     }
