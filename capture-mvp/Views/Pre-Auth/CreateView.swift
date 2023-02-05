@@ -71,7 +71,7 @@ struct CreateView: View {
                                 .frame(width: 20, height: 20)
                                 .foregroundColor(Color("Dark"))
                             
-                            TextField("Password", text: $password)
+                            SecureField("Password", text: $password)
                             
                         
                         }

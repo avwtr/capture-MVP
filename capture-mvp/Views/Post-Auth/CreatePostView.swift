@@ -11,6 +11,9 @@ struct PostView: View {
     @State private var headline =  ""
     @State private var description =  ""
     @State private var address = ""
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var viewModel = UploadPostViewModel()
     var body: some View {
         ZStack{
             VStack{
@@ -26,16 +29,16 @@ struct PostView: View {
                         Rectangle().frame(width: 350, height: 1).foregroundColor(.white)
                         
                         TextField("Description", text: $description).foregroundColor(.white).textFieldStyle(.plain).padding().frame(height: 175)
-                        }
-                        
+                    }
+                    
                     Rectangle().frame(width: 350, height: 1).foregroundColor(.white)
-                        
+                    
                     TextField("Address", text: $address).foregroundColor(.white).textFieldStyle(.plain).padding().frame(height: 80)
                     
                     Rectangle().frame(width: 350, height: 1).foregroundColor(.white)
                     
                     Button(action: {
-                        // ...
+                        viewModel.uploadPost(withHeadline: headline, address: address, description: description)
                     }) {
                         Text("Submit Request").foregroundColor(.white)
                     }.padding().frame(width: 300, height: 55)
@@ -46,6 +49,11 @@ struct PostView: View {
             }.offset(y: 50)
         }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
             .background(Color("Dark"))
+            .onReceive(viewModel.$didUploadPost){ success in
+                if success {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
     }
 }
 

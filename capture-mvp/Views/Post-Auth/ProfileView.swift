@@ -9,15 +9,17 @@ import SwiftUI
 
 struct profile: View {
     @State private var showMenu = false
+    @EnvironmentObject var authViewModel: AuthViewModel
     var body: some View {
-        NavigationView{
+        if let user = authViewModel.currentUser{
+            NavigationView{
             ZStack{
-               
+                
                 VStack{
                     if showMenu {
                         ZStack{
                             Color(.black).opacity(0.25)
-        
+                            
                         }.onTapGesture {
                             withAnimation(.easeInOut){
                                 showMenu = false
@@ -32,8 +34,8 @@ struct profile: View {
                                 Image(systemName: "gear").foregroundColor(.white).font(.system(size: 28))}
                         }.offset(x: -130, y: 20)
                         Image("circle").frame(height: 8).padding(60)
-                        Text("Alex Vawter").font(.system(size: 30, weight:.bold, design: .default)).foregroundColor(.white)
-                        Text("@avawt12").font(.system(size: 13, weight: .light, design: .default)).foregroundColor(.white)}.offset(y:-130).padding(10)
+                        Text(user.fullname).font(.system(size: 30, weight:.bold, design: .default)).foregroundColor(.white)
+                        Text("@\(user.username)").font(.system(size: 13, weight: .light, design: .default)).foregroundColor(.white)}.offset(y:-130).padding(10)
                     HStack{
                         Text("Image Library").font(.system(size: 20, weight: .medium, design: .default)).foregroundColor(.white).underline()
                         Image(systemName:"photo").foregroundColor(.white)
@@ -43,7 +45,7 @@ struct profile: View {
                             Image("other")
                             Image("b2")
                             
-                            
+            
                         }
                     }.offset(y: -58)
                     
@@ -53,10 +55,13 @@ struct profile: View {
                 }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
                     .background(Color("Dark"))
                 SideMenuView().frame(width: 300).background(showMenu ? Color.white: Color.clear).offset(x: showMenu ? -50: -300, y: 0)
-                    
+                
             }
             
         }
+        
+    }
+    
     }
 }
 struct profile_Previews: PreviewProvider {

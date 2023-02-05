@@ -30,6 +30,7 @@ class AuthViewModel: ObservableObject{
             }
             guard let user = result?.user else {return}
             self.userSession = user
+            self.fetchUser()
             print("DEBUG: User logged in")
         }
     }
@@ -51,6 +52,7 @@ class AuthViewModel: ObservableObject{
                 .document(user.uid)
                 .setData(data){_ in
                     self.didAuthenticateUser = true
+                    self.fetchUser()
                 }
         }
     }
