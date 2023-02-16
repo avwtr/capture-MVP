@@ -9,12 +9,12 @@ import SwiftUI
 
 struct FeedPostView: View {
     let post: Post
+    @ObservedObject var viewModel = FeedViewModel()
+
     var body: some View {
-        
-        Button {
-            //
-        }
-        label: {
+        NavigationView {
+            
+            NavigationLink(destination: ViewPostView(post: post), label: {
             VStack(alignment: .leading){
                 
                 
@@ -40,11 +40,8 @@ struct FeedPostView: View {
                     
                 }.foregroundColor(.white).background(Color("Dark"))
             }
-            
-            
-            
-        }
-        
+            })
+        }.navigationBarTitle("").navigationBarHidden(true)
     }
 }
 

@@ -13,6 +13,6 @@ struct Post: Identifiable, Decodable {
     let headline: String
     let address: String
     let uid: String
-    
+    let description: String
     var user: User?
 }
