@@ -29,7 +29,7 @@ struct ViewPostView: View {
                     }.padding().frame(width: 300, height: 55)
                         .background(Color("Light"))
                         .cornerRadius(15)
-                }
+                }.padding(.horizontal)
             }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
                 .background(Color("Dark"))
         }

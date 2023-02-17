@@ -16,7 +16,6 @@ struct FeedPostView: View {
             
             VStack(alignment: .leading){
                 
-                
                 HStack(alignment: .top, spacing: 12){
                     Image("asdf").frame(width: 56, height: 56).foregroundColor(Color("Light")).padding()
                     
