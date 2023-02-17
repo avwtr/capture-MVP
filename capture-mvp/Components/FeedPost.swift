@@ -12,6 +12,7 @@ struct FeedPostView: View {
     @ObservedObject var viewModel = FeedViewModel()
 
     var body: some View {
+        
         NavigationView {
             
             VStack(alignment: .leading){
