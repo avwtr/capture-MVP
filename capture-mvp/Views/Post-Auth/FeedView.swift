@@ -11,20 +11,24 @@ struct FullFeedView: View {
     @ObservedObject var viewModel = FeedViewModel()
     
     var body: some View {
-        ScrollView{
-            LazyVStack{
-                ForEach(viewModel.posts) { post in
-                    FeedPostView(post: post)
-                        .padding()
-                    Divider()
-                        .overlay(.white)
-                }
-            }
-        }.background(Color("Dark"))
+        NavigationView{
+            ScrollView{
+                LazyVStack{
+                    ForEach(viewModel.posts) { post in
         
-        
-        
-        
+                            NavigationLink(destination: ViewPostView(post: post), label: {
+                                FeedPostView(post: post)
+                                    .padding()
+                            }).frame(height: 200)
+                        Divider()
+                            .overlay(.white)
+                    }
+                }.background(Color("Dark"))
+            }.background(Color("Dark"))
+            
+            
+            
+        }
         
     }
 }

@@ -28,7 +28,7 @@ struct ViewPostView: View {
                         Text("Fulfill Request").foregroundColor(.white)
                     }.padding().frame(width: 300, height: 55)
                         .background(Color("Light"))
-                        .cornerRadius(15).offset(y: 100)
+                        .cornerRadius(15)
                 }
             }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
                 .background(Color("Dark"))
