@@ -36,7 +36,6 @@
 		90F62B8D29883949009032A1 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B8C29883949009032A1 /* CamView.swift */; };
 		90F62B91298846E8009032A1 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B90298846E8009032A1 /* CustomCamView.swift */; };
 		90F62B9329897992009032A1 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B9229897992009032A1 /* CreatePostView.swift */; };
-		90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F62B94298997BA009032A1 /* ViewRequestView.swift */; };
 		90F6E1AE298C46B3001D9B3E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1AD298C46B3001D9B3E /* SettingsView.swift */; };
 		90F6E1B0298C4E49001D9B3E /* ProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1AF298C4E49001D9B3E /* ProfilePicView.swift */; };
 		90F6E1B2298D8670001D9B3E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1B1298D8670001D9B3E /* UserService.swift */; };
@@ -45,9 +44,7 @@
 		90F6E1B9298D99E7001D9B3E /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1B8298D99E7001D9B3E /* UploadPostViewModel.swift */; };
 		90F6E1BB298D9D46001D9B3E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1BA298D9D46001D9B3E /* FeedViewModel.swift */; };
 		90F6E1BD298D9DD8001D9B3E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1BC298D9DD8001D9B3E /* Post.swift */; };
-		90F6E1BF299015D3001D9B3E /* New Feed Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1BE299015D3001D9B3E /* New Feed Post.swift */; };
 		90F6E1C1299021BE001D9B3E /* ViewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1C0299021BE001D9B3E /* ViewPostView.swift */; };
-		90F6E1E7299D3F74001D9B3E /* MyViewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6E1E6299D3F74001D9B3E /* MyViewPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +74,6 @@
 		90F62B8C29883949009032A1 /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
 		90F62B90298846E8009032A1 /* CustomCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
 		90F62B9229897992009032A1 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
-		90F62B94298997BA009032A1 /* ViewRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRequestView.swift; sourceTree = "<group>"; };
 		90F6E1AD298C46B3001D9B3E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		90F6E1AF298C4E49001D9B3E /* ProfilePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicView.swift; sourceTree = "<group>"; };
 		90F6E1B1298D8670001D9B3E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -86,9 +82,7 @@
 		90F6E1B8298D99E7001D9B3E /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		90F6E1BA298D9D46001D9B3E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		90F6E1BC298D9DD8001D9B3E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		90F6E1BE299015D3001D9B3E /* New Feed Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New Feed Post.swift"; sourceTree = "<group>"; };
 		90F6E1C0299021BE001D9B3E /* ViewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostView.swift; sourceTree = "<group>"; };
-		90F6E1E6299D3F74001D9B3E /* MyViewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +146,6 @@
 			children = (
 				90272685297F415B006ACCF0 /* TabBar.swift */,
 				90272687297F416F006ACCF0 /* FeedPost.swift */,
-				90F6E1BE299015D3001D9B3E /* New Feed Post.swift */,
 				902E8AE62989C7B40007240B /* RoundedShape.swift */,
 				902E8AE82989D38A0007240B /* CustomInputField.swift */,
 				90B9E61D298AF8E300742CA5 /* AuthHeaderView.swift */,
@@ -181,12 +174,10 @@
 				90F62B8C29883949009032A1 /* CamView.swift */,
 				90F62B90298846E8009032A1 /* CustomCamView.swift */,
 				90F62B9229897992009032A1 /* CreatePostView.swift */,
-				90F62B94298997BA009032A1 /* ViewRequestView.swift */,
 				90B9E621298B2CDF00742CA5 /* SideMenuView.swift */,
 				90B9E623298B2CF100742CA5 /* SideMenuRowView.swift */,
 				90F6E1AD298C46B3001D9B3E /* SettingsView.swift */,
 				90F6E1C0299021BE001D9B3E /* ViewPostView.swift */,
-				90F6E1E6299D3F74001D9B3E /* MyViewPostView.swift */,
 			);
 			path = "Post-Auth";
 			sourceTree = "<group>";
@@ -314,8 +305,6 @@
 				90272690297F4E69006ACCF0 /* CreateView.swift in Sources */,
 				90B9E622298B2CDF00742CA5 /* SideMenuView.swift in Sources */,
 				9027268C297F4CB8006ACCF0 /* LandingView.swift in Sources */,
-				90F62B95298997BA009032A1 /* ViewRequestView.swift in Sources */,
-				90F6E1E7299D3F74001D9B3E /* MyViewPostView.swift in Sources */,
 				90F6E1B5298D8A38001D9B3E /* User.swift in Sources */,
 				9027268A297F4430006ACCF0 /* FeedView.swift in Sources */,
 				90F6E1B2298D8670001D9B3E /* UserService.swift in Sources */,
@@ -330,7 +319,6 @@
 				90272688297F416F006ACCF0 /* FeedPost.swift in Sources */,
 				9027266E297EF063006ACCF0 /* capture_mvpApp.swift in Sources */,
 				90F6E1B9298D99E7001D9B3E /* UploadPostViewModel.swift in Sources */,
-				90F6E1BF299015D3001D9B3E /* New Feed Post.swift in Sources */,
 				90B9E61E298AF8E300742CA5 /* AuthHeaderView.swift in Sources */,
 				90B9E626298B2D0100742CA5 /* SideMenuViewModel.swift in Sources */,
 				90F6E1BD298D9DD8001D9B3E /* Post.swift in Sources */,
