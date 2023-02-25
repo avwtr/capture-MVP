@@ -45,7 +45,7 @@ extension ContentView{
                     if selectedTab == .house{
                         FullFeedView()
                     }
-                    if selectedTab == .camera{
+                    if selectedTab == .plus{
                         CameraView()
                     }
                     if selectedTab == .person{

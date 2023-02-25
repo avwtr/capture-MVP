@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Tab: String, CaseIterable{
     case house
-    case camera
+    case plus
     case person
 }
 
